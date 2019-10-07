@@ -5,7 +5,7 @@ import { AlertifyService } from '../../_services/alertify.service';
 import { ActivatedRoute } from '@angular/router';
 import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
 import { TabsetComponent } from '../../../../node_modules/ngx-bootstrap';
-import { PARAMETERS } from '../../../../node_modules/@angular/core/src/util/decorators';
+// import { PARAMETERS } from '../../../../node_modules/@angular/core/src/util/decorators';
 import { SelectorContext } from '../../../../node_modules/@angular/compiler';
 
 @Component({
@@ -14,7 +14,7 @@ import { SelectorContext } from '../../../../node_modules/@angular/compiler';
   styleUrls: ['./member-detail.component.css']
 })
 export class MemberDetailComponent implements OnInit {
-  @ViewChild('memberTabs') memberTabs: TabsetComponent;
+  @ViewChild('memberTabs',  { static: true }) memberTabs: TabsetComponent;
   user: User;
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
