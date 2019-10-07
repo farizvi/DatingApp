@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap';
-import { User } from '../../_models/user';
+import { User } from '../../_models/User';
 
 @Component({
   selector: 'app-roles-modal',

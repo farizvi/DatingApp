@@ -18,6 +18,10 @@ namespace DatingApp.API.Data
             _userManager = userManager;
         }
 
+        public Seed()
+        {
+            
+        }
         public void SeedUsers()
         {
             if (!_userManager.Users.Any())
